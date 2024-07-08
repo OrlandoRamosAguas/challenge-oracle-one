@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="Logo@2x.ico">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <label for="texto">Ingresa el texto</label>
-    <textarea id="texto" name="texto" rows="5" cols="33"></textarea>
-    <input onclick="encriptar()" type="button" value="Encriptar">
-    <input type="button" value="Desencriptar">
-    <p>Solo letras minúsculas, sin acentos y sin caracteres especiales</p>
-    <p></p>
-    <input type="button" value="Copiar">
+    <nav class="logoAlura">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="Logo.png" alt="Mi Logotipo">
 
+    <label for="texto">Ingresa el texto</label>
+    <input type="text" id="inputTexto" placeholder="Ingresa tu texto">
+        <button class="botonEncriptar" style="width: 328px; height: 67px" onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+    <p id="resultado"></p>
+        <button onclick="copiarResultado()">Copiar texto</button>
     <script src="encriptador.js"></script>
 </body>
 </html>
