@@ -1,6 +1,6 @@
 
 :root{
-    --color-primario: darkblue;
+    --color-primario: #0A3871;
     --color-secundario: gray;
 
 }
@@ -36,4 +36,15 @@ input, button {
     display: center;
 }
 
-.
+.botonDesencriptar{
+    color: var(--color-primario);
+    border-radius: 24px;
+    background: #D8DFE8;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 280;
+    border: none;
+    margin-top: 2rem;
+    display: center;
+}

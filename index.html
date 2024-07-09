@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,23 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <nav class="logoAlura">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="Logo.png" alt="Mi Logotipo">
+            </a>
+        </div>
+    </nav>
 
-    <label for="texto">Ingresa el texto</label>
+    <label>Ingresa el texto</label>
     <input type="text" id="inputTexto" placeholder="Ingresa tu texto">
-        <button class="botonEncriptar" style="width: 328px; height: 67px" onclick="encriptar()">Encriptar</button>
-        <button onclick="desencriptar()">Desencriptar</button>
+    <button class="botonEncriptar" style="width: 328px; height: 67px" onclick="encriptar()">Encriptar</button>
+    <button class="botonDesencriptar" style="width: 328px; height: 67px" onclick="desencriptar()">Desencriptar</button>
     <p id="resultado"></p>
-        <button onclick="copiarResultado()">Copiar texto</button>
+    <button onclick="copiarResultado()">Copiar texto</button>
     <script src="encriptador.js"></script>
 </body>
+
 </html>
