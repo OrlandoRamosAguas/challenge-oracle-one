@@ -19,12 +19,12 @@
         </div>
     </nav>
 
-    <label>Ingresa el texto</label>
-    <input type="text" id="inputTexto" placeholder="Ingresa tu texto">
+    <!--label>Ingresa el texto</label-->
+    <input class="cuadroDeTexto" style="width: 900px; height: 600px" type="text" id="inputTexto" placeholder="Ingresa tu texto">
     <button class="botonEncriptar" style="width: 328px; height: 67px" onclick="encriptar()">Encriptar</button>
-    <button class="botonDesencriptar" style="width: 328px; height: 67px" onclick="desencriptar()">Desencriptar</button>
+    <button class="botonDesencriptarCopiar" style="width: 328px; height: 67px" onclick="desencriptar()">Desencriptar</button>
     <p id="resultado"></p>
-    <button onclick="copiarResultado()">Copiar texto</button>
+    <button class="botonDesencriptarCopiar" style="width: 328px; height: 67px" onclick="copiarResultado()">Copiar</button>
     <script src="encriptador.js"></script>
 </body>
 

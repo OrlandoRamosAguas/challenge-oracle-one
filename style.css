@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
     --color-primario: #0A3871;
     --color-secundario: gray;
-
+    --fuente: "Inter", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: --fuente;
     text-align: center;
-    background-color: white;
+    background-color: #E5E5E5;
     height: 100vh;
     display: flex;
     
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color-primario);
 }
 
 input, button {
@@ -36,7 +37,7 @@ input, button {
     display: center;
 }
 
-.botonDesencriptar{
+.botonDesencriptarCopiar{
     color: var(--color-primario);
     border-radius: 24px;
     background: #D8DFE8;
@@ -47,4 +48,16 @@ input, button {
     border: none;
     margin-top: 2rem;
     display: center;
+    border-color: var(--color-primario);
+    border-width: ;
+}
+
+.cuadroDeTexto{
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font: var(--color-primario);
+    border: none;
+    background: #E5E5E5;
+    
 }
