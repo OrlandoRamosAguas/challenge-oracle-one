@@ -6,6 +6,24 @@ function encriptar() {
     console.log(textoAEncriptar);
 }*/
 
+// Función de validación
+function validarTexto(inputText) {
+    // Expresión regular para verificar letras minúsculas sin acentos ni caracteres especiales
+    const regex = /^[a-z]+$/;
+    if (regex.test(inputText)) {
+        console.log("El texto es válido.");
+        return true;
+    } else {
+        console.log("El texto no cumple con los requisitos.");
+        return false;
+    }
+}
+
+// Ejemplo de uso:
+const miTexto = "holaMundo"; // Cambia esto por el texto que quieras validar
+validarTexto(miTexto);
+
+
 function encriptar() {
     const textoOriginal = document.getElementById("inputTexto").value.toLowerCase();
     let textoEncriptado = textoOriginal
@@ -15,7 +33,7 @@ function encriptar() {
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
 
-    document.getElementById("resultado").textContent = textoEncriptado;
+    document.getElementById("resultado").value = textoEncriptado;
 }
 
 function desencriptar() {
@@ -27,7 +45,7 @@ function desencriptar() {
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 
-    document.getElementById("resultado").textContent = textoOriginal;
+    document.getElementById("resultado").value = textoOriginal;
 }
 
 function copiarResultado() {

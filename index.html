@@ -11,21 +11,49 @@
 </head>
 
 <body>
-    <nav class="logoAlura">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="Logo.png" alt="Mi Logotipo">
-            </a>
+    <div class="container-fluid">
+        <div class="logoAlura row">
+            <div class="container">
+                <a class="navbar-brand" style="display: flex;" href="#">
+                    <img id="logo" src="Logo.png" alt="Mi Logotipo">
+                </a>
+            </div>
         </div>
-    </nav>
+        <div class="row h-75">
+            <div class="col-8">
+                <textarea class="cuadroDeTexto col-12" style="height: 100%; font-size: 25px;" type="text" id="inputTexto"
+                    placeholder="Ingresa tu texto"></textarea>
+            </div>
+            <div class="col-4">
+                <button class="botonEncriptar row w-75" style="height: 67px;" onclick="encriptar()">
+                    <p>Encriptar</p>
+                </button>
+                <button class="botonDesencriptar row w-75" style="height: 67px;  margin-top: 1rem;"
+                    onclick="desencriptar()">
+                    <p>Desencriptar</p>
+                </button>
+                <textarea class="row w-75 h-50" id="resultado" style="border: 1px; background-color: rgb(196, 223, 224);  margin-top: 2rem; caret-color: transparent; word-wrap: break-word;
+                    width: fit-content;" disabled></textarea>
+                <button class="botonCopiar row w-75" style=" height: 67px;  margin-top: 1rem;"
+                    onclick="copiarResultado()">
+                    <p>Copiar</p>
+                </button>
 
-    <!--label>Ingresa el texto</label-->
-    <input class="cuadroDeTexto" style="width: 900px; height: 600px" type="text" id="inputTexto" placeholder="Ingresa tu texto">
-    <button class="botonEncriptar" style="width: 328px; height: 67px" onclick="encriptar()">Encriptar</button>
-    <button class="botonDesencriptarCopiar" style="width: 328px; height: 67px" onclick="desencriptar()">Desencriptar</button>
-    <p id="resultado"></p>
-    <button class="botonDesencriptarCopiar" style="width: 328px; height: 67px" onclick="copiarResultado()">Copiar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="encriptador.js"></script>
 </body>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </html>
